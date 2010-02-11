@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<plugin
+    name="Eclipse Filters"
+    id="com.jasonkarns.eclipse.filters"
+    version="0.0.1"
+    provider-name="JRK">
+    
+    <requires>
+    <import plugin="org.eclipse.core.resources"/>
+        <import plugin="org.eclipse.ui"/>
+    </requires>
+
+    <extension point="org.eclipse.ui.ide.resourceFilters">
+        <filter pattern="Thumbs.db" selected="true"/>
+        <filter pattern=".svn" selected="true"/>
+        <filter pattern=".git" selected="true"/>
+        <filter pattern=".project" selected="true"/>
+    </extension>
+</plugin>
